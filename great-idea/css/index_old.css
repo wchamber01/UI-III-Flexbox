@@ -63,195 +63,235 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Your code starts here! */
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
 body{
-    box-sizing: border-box;
-    width: 100% auto;
-	margin: 5%;
-}
-.header{
 	box-sizing: border-box;
-    display: flex;
-	width: 100%;
-	/* padding: 30px; */
-	/* padding-left: 300px; */
-	border-bottom: 1px solid black;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .navigation{
 	box-sizing: border-box;
-    display: flex;
+	display: flex;
 	width: 100% auto;
-    color: gray;
-}
-.navigation nav{
-    /* box-sizing: border-box; */
-    display: flex;
-    width:80% auto;
+	justify-content: space-evenly;
+	text-align: left;
+	color: gray;
 }
 .navigation a{
-    width: calc(100% /7) auto;
-	margin: calc(100%/7);
+	padding: 50px;
+	margin: -20px;
 	color: gray;
 	text-decoration: none;
-	font-weight: bold;
 }
 .navigation a:hover{
 	background-color: aqua;
 	border-radius: 15px 50px;
-	color: slategray;
-	font-weight: bold;
-	text-shadow:
-		-1px -1px 0 white,
-		1px -1px 0 white,
-		-1px 1px 0 white,
-		1px 1px 0 white;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
 }
 .navigation .logo{
-	display: inline-block;
-	/* z-index: -1; */
-	margin-left: 50px;
-	margin-right: 0px;
-	margin-bottom: -10px;
+	display: flex;
+	padding: 0px;
+}
+.navigation img:hover{
+	z-index: -1;
+}
+
+header{
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 30px;
+	border-bottom: 1px solid black;
 }
 
 .iod{
-	display: block;
-	margin-left: -150px;
-	margin-top: 50px;
-	margin-right: 100px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
 }
+
 h1{
 	box-sizing: border-box;
-	display: inline-block;
+	display: flex;
 	font-size: 70px;
 	text-align: center;
-	position: relative;
-	text-shadow: 5px 5px 3px gray;
+	margin: auto;
 }
+
+h2{
+	font-size: 30px;
+}
+
 .button{
+	display: flex;
+	justify-content: center;
 	border: 1px solid black;
+	font-size: 20px;
+	border-radius: 10px;
 	background-color: white;
 	width: 200px;
-	padding: 5px 20px 5px;
-	margin: 0 auto;
-	margin-bottom: 50px;
-	display: inline-block;
-	color: gray;
-	font-weight: bold;
-	box-shadow: 3px 3px 5px gray;
-	font-weight: bold;
-	border-radius: 180px
+	margin: auto;
+	margin-top: 0px;
 }
+
 .button:hover{
-	background-color:rgba(0, 255, 255, 0.8);
-	color: slategray;
-	font-weight: bold;
-	text-shadow:
-		-1px -1px 0 white,
-		1px -1px 0 white,
-		-1px 1px 0 white,
-		1px 1px 0 white;
+	background-color: rgb(46, 46, 160);
+	color: white;
+	text-size-adjust: 125%;
 }
+
 .header-img{
 	box-sizing: border-box;
-	display: inline-block;
-	padding-left: 180px;
+	display: flex;
+	flex-direction: column;
+	/* padding-left: 180px; */
 }
+
 .section1{
 	box-sizing: border-box;
-	width: 100%;
+	display: flex;
 }
+
 .section1 .left{
 	box-sizing: border-box;
-	width: 48%;
-	display: inline-block;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-right: 3%;
-	text-shadow: 3px 3px 5px gray;
+	align-content: left;
+	padding: 30px 15px 30px 0px;
 }
+
 .section1 .left:hover{
 	transform: scale(1.1);
 }
+
 .section1 .right{
 	box-sizing: border-box;
-	width: 48%;
-	display: inline-block;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	text-shadow: 3px 3px 5px gray;
+	align-content: right;
+	padding: 30px 0px 30px 15px;
 }
+
 .section1 .right:hover{
 	transform: scale(1.1);
 }
+
 .middle-img{
-	display: inline-block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	border-radius: 10px;
-	box-shadow: 5px 5px 5px gray;
+	 display: flex;
+	 width: 100%;
 }
+
 .section2{
 	box-sizing: border-box;
-	width: 100%;
+	display: flex;
 	border-bottom: 1px solid black;
 }
+
 .section2 .left{
-	box-sizing: border-box;
-	width: 30%;
-	display: inline-block;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-right: 4%;
-	text-shadow: 3px 3px 5px gray;
+	 box-sizing: border-box;
+	 align-content: left;
+	 padding: 30px 15px 30px 0px;
 }
 .section2 .left:hover{
 	transform: scale(1.1);
 }
+
 .section2 .center{
 	box-sizing: border-box;
-	width: 30%;
-	display: inline-block;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	margin-right: 4%;
+	align-content: center;
+	padding: 30px 15px;
 }
+
 .section2 .center:hover{
 	transform: scale(1.1);
 }
+
 .section2 .right{
 	box-sizing: border-box;
-	width: 30%;
-	display: inline-block;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	text-shadow: 3px 3px 5px gray;
+	align-content: right;
+	padding: 30px 0px 30px 15px;
 }
+
 .section2 .right:hover{
 	transform: scale(1.1);
 }
+
 .contact{
 	box-sizing: border-box;
 	width: 100%;
 	margin-top: 40px;
 	margin-bottom: 20px;
 	text-align: left;
-}
-.contact .info{
+ }
+ 
+ .contact .info{
 	box-sizing: border-box;
 	margin-top: 20px; 
 	margin-bottom: 20px;
-}
-footer{
-	box-sizing: border-box;
-	width: 100%;
-	text-align: center;
-	padding: 20px;
-	/* margin-left: auto;
-	margin-right: auto; */
-	text-shadow: 3px 3px 5px gray;
-}
-h2{
-	text-shadow: 5px 5px 3px gray;
-}
+ }
+ 
+ footer{
+	 box-sizing: border-box;
+	 width: 100%;
+	 text-align: center;
+	 padding: 20px;
+ }
+
+ .services-header-img{
+	 display: flex;
+	 flex-direction: column;
+	 margin-bottom: 30px;
+ }
+ 
+ .services{
+	 display: flex;
+	 flex-direction: column;
+ }
+ 
+ #services{
+	 display: flex;
+	 flex-wrap: wrap;
+	 justify-content: space-between;
+	 margin-top: 40px;
+	 margin-bottom: 40px;
+	 border-bottom: 1px solid black;
+	 text-align: left;
+ }
+ 
+ #services .serviceBox{
+	 width: 48%;
+	 background-color: lightgray;
+	 border: 1px solid black;
+	 padding: 15px;
+	 margin-bottom: 40px;
+ }
+ #services .serviceBox a{
+	 display: block;
+	 background-color: white;
+	 border: 1px solid gray;
+	 width: 180px;
+	 text-align: center;
+	 border-radius: 5px;
+	 text-decoration: none;
+	 margin-top: 10px;
+	 padding: 10px 0px;
+	 color: black;
+ }
+ .bottom{
+	 display: flex;
+	 text-align: left;
+	 margin-bottom: 30px;
+ }
+ .bottom div{
+	 width: 49%;
+	 margin-right: 20px;
+ }
+ .bottom p{
+	 padding-bottom: 10px;
+ }
+ .bottom li{
+	 padding: 10px 0px;
+ }
+ .bottom img{
+	 width: 48%;
+	 margin-left: 20px;
+ }
